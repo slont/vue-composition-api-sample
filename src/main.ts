@@ -3,6 +3,8 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
+import './plugins/buefy'
+import './plugins/composition-api'
 
 Vue.config.productionTip = false
 
