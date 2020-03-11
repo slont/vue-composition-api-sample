@@ -29,12 +29,11 @@
 </template>
 
 <script lang="ts">
-  import {computed, createComponent, ref, watch} from '@vue/composition-api'
-  import {Item, Selectable} from '@/types'
+  import {defineComponent} from '@vue/composition-api'
   import ItemModule from '@/modules/item'
   import TableModule from '@/modules/table'
 
-  export default createComponent({
+  export default defineComponent({
     setup(props, ctx) {
       const itemModule = ItemModule(ctx)
       const tableModule = TableModule(itemModule.items)
